@@ -15,6 +15,8 @@
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
    <!-- JavaScript personalizado -->
    <script src="js/scripts.js"></script>
   <!-- Estilos personalizados -->
@@ -87,7 +89,7 @@
             <p>¡Estamos aquí para ayudarte! Contáctanos a través del formulario o visítanos en nuestra ubicación:</p>
             
             <!-- Formulario de contacto -->
-            <form action="php/mail.php" method="POST">
+            <form id="contactForm">
                 <div class="mb-3">
                   <label for="nombre" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -100,9 +102,11 @@
                   <label for="mensaje" class="form-label">Mensaje</label>
                   <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
                 </div>
-                <div class="g-recaptcha" data-sitekey="TU_SITE_KEY"></div> <!-- Reemplaza "TU_SITE_KEY" con tu clave de sitio de reCAPTCHA -->
-                <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                <div class="g-recaptcha" data-sitekey="6Lcq7XgpAAAAABAxhbxphTZMsbpcw78QaL6AMvdc"></div> 
+                <button type="submit"  class="btn btn-primary mt-2">Enviar</button>
             </form>
+
+            <div id="respuesta"></div>
               
             <!-- Mapa de Google Maps -->
             <div class="container mt-5">
