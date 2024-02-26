@@ -14,6 +14,15 @@ window.addEventListener('scroll', function() {
     } else {
       navbar.classList.remove('navbar-nav-small');
     }
+
+    var navbar = document.querySelector('.logo');
+    if (window.scrollY > 50) {
+      navbar.classList.remove('logo-large');
+      navbar.classList.add('logo-small');
+    } else {
+      navbar.classList.remove('logo-small');
+      navbar.classList.add('logo-large');
+    }
   });
 
 $(document).ready(function(){
