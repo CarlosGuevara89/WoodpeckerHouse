@@ -101,7 +101,7 @@ body {
   }
 
   .banner img {
-    max-height: 900px;
+    max-height: 800px;
     object-fit: cover;
   }
   
