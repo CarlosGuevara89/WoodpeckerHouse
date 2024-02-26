@@ -8,6 +8,12 @@ window.addEventListener('scroll', function() {
       navbar.classList.add('navbar-large');
     }
 
+    var navbar = document.querySelector('.navbar-nav');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-nav-small');
+    } else {
+      navbar.classList.remove('navbar-nav-small');
+    }
   });
 
 $(document).ready(function(){
