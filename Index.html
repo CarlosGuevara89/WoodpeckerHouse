@@ -21,42 +21,19 @@
    <script src="js/scripts.js"></script>
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="css/styles.css">
-  <!-- JavaScript para desplazamiento suave -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-  </script>
-  <style>
-    /* Estilos para el banner */
-    .banner {
-      height: 300px;
-      background-color: #f8f9fa;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #333;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
   <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-large fixed-top" style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Woodpecker House</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo2.png" alt="Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="#inicio">Inicio</a>
           </li>
@@ -71,12 +48,72 @@
     </div>
   </nav>
 
-  <div class="container page-content">
-        <!-- Banner -->
-        <section id="inicio" class="banner">
-            ¡Bienvenido a mi página web!
-        </section>
 
+
+
+  <!--<nav class="navbar navbar-expand-lg navbar-large fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo2.png" alt="Logo" class="logo-large">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acerca">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>-->
+  <!-- Banner -->
+  <section id="inicio"> 
+    <div class="container-fluid p-0">
+          <div id="banner" class="carousel slide banner" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/woodpeckerhouse-img-1.jpeg" class="d-block w-100" alt="woodpeckerhouse 1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/woodpeckerhouse-img-4.jpeg" class="d-block w-100" alt="woodpeckerhouse 2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/woodpeckerhouse-img-5.jpeg" class="d-block w-100" alt="woodpeckerhouse 3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/woodpeckerhouse-img-8.jpeg" class="d-block w-100" alt="woodpeckerhouse 4">
+              </div>
+              <div class="carousel-item">
+                <img src="img/woodpeckerhouse-img-3.jpeg" class="d-block w-100" alt="woodpeckerhouse 5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <ol class="carousel-indicators">
+              <li data-bs-target="#banner" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#banner" data-bs-slide-to="1"></li>
+              <li data-bs-target="#banner" data-bs-slide-to="2"></li>
+              <li data-bs-target="#banner" data-bs-slide-to="3"></li>
+              <li data-bs-target="#banner" data-bs-slide-to="4"></li>
+            </ol>
+          </div>
+    </div>
+    </section>
+    <div class="container page-content">
         <!-- Contenido -->
         <section id="acerca" class="container my-5">
             <h2>Acerca de</h2>

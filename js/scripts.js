@@ -3,14 +3,12 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 50) {
       navbar.classList.remove('navbar-large');
       navbar.classList.add('navbar-small');
-      navbar.classList.add('transparent');
     } else {
       navbar.classList.remove('navbar-small');
       navbar.classList.add('navbar-large');
-      navbar.classList.remove('transparent');
     }
-  });
 
+  });
 
 $(document).ready(function(){
     $('#contactForm').submit(function(e){
@@ -32,4 +30,10 @@ $(document).ready(function(){
         }
       });
     });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var banner = document.getElementById("banner");
+  banner.style.display = "block";
 });
