@@ -19,16 +19,6 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-/*.logo-large{
-  height: 120px;
-  transition: 0.5s ease;
-}
-
-.logo-small{
-  height: 80px;
-  transition: 0.5s ease;
-}*/
-
 .logo{
   max-height: 100px;
 }
@@ -97,7 +87,7 @@ body {
   }
 
   .banner img {
-    max-height: 800px;
+    max-height: 900px;
     object-fit: cover;
   }
   
@@ -114,46 +104,28 @@ body {
 
   @media (max-width: 991px) {
     .navbar {
-      background-color: rgba(56, 64, 68, 0.8);
       padding: 0;
+    }
+
+    .navbar-nav{
+      background-color: rgba(56, 64, 68, 0.8) ;
+      padding: 10px;
     }
 
     .logo{
       max-height: 60px;
     }
+
+    .banner img {
+      height: 50vh;
+      object-fit: cover;
+    }
+
+    .custom-toggler {
+      background-color: rgba(255, 255, 255, 0.5); 
+      border-color: rgba(255, 255, 255, 0.5); 
+      color: #fff; 
+    }
   }
-  /*@media (max-width: 991px) {
-    .navbar {
-      background-color: rgba(56, 64, 68, 0.8) 
-    }
-    
-    .navbar-nav{
-      background-color: rgba(56, 64, 68, 0.8) 
-    }
 
-    .banner {
-      margin-top: 15%;
-    }
-
-    .navbar-large {
-      height: 130px;
-      transition: 0.5s ease; 
-    }
-  
-    .navbar-small {
-        height: 80px;
-        transition: 0.5s ease;
-    }
-
-    .logo-large{
-      height: 100px;
-      transition: 0.5s ease;
-    }
-    
-    .logo-small{
-      height: 60px;
-      transition: 0.5s ease;
-    }
-    
-  }*/
 
