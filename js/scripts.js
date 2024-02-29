@@ -1,27 +1,20 @@
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
+    var navbarNav = document.querySelector('.navbar-nav');
+    var logo = document.querySelector('.logo');
+    
     if (window.scrollY > 50) {
       navbar.classList.remove('navbar-large');
       navbar.classList.add('navbar-small');
+      navbarNav.classList.add('navbar-nav-small');
+      logo.classList.remove('logo-large');
+      logo.classList.add('logo-small');
     } else {
       navbar.classList.remove('navbar-small');
       navbar.classList.add('navbar-large');
-    }
-
-    var navbar = document.querySelector('.navbar-nav');
-    if (window.scrollY > 50) {
-      navbar.classList.add('navbar-nav-small');
-    } else {
-      navbar.classList.remove('navbar-nav-small');
-    }
-
-    var navbar = document.querySelector('.logo');
-    if (window.scrollY > 50) {
-      navbar.classList.remove('logo-large');
-      navbar.classList.add('logo-small');
-    } else {
-      navbar.classList.remove('logo-small');
-      navbar.classList.add('logo-large');
+      navbarNav.classList.remove('navbar-nav-small');
+      logo.classList.remove('logo-small');
+      logo.classList.add('logo-large');
     }
   });
 
@@ -51,4 +44,22 @@ $(document).ready(function(){
 document.addEventListener("DOMContentLoaded", function() {
   var banner = document.getElementById("banner");
   banner.style.display = "block";
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var contactForm = document.getElementById("contact-form");
+  var contactMap = document.getElementById("contact-map");
+  var animationReproduced = false;
+
+  window.addEventListener("scroll", function() {
+    var scrollPosition = window.scrollY;
+    var seccionPosition = document.getElementById("contact-form-map").offsetTop;
+    var triggerPosition = seccionPosition - window.innerHeight / 1.5; 
+
+    if (scrollPosition >= triggerPosition && !animationReproduced) {
+      contactForm.classList.add("slideLeftAnimation");
+      contactMap.classList.add("slideRightAnimation");
+      animationReproduced = true;
+    }
+  });
 });

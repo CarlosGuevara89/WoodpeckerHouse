@@ -16,17 +16,17 @@ body {
 }
 
 .logo-large {
-  max-height: 130px;
+  max-height: 100px;
   transition: 0.5s ease; 
 }
 
 .logo-small {
-  max-height: 80px !important;
+  max-height: 50px !important;
   transition: 0.5s ease;
 }
 
 .logo{
-  max-height: 130px;
+  max-height: 110px;
 }
 
 .navbar-nav-small{
@@ -78,8 +78,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     border: 0;
   }
 
@@ -97,7 +97,7 @@ body {
   .banner {
     display: none;
     text-align: center;
-    animation: slideIn 1s ease-in-out forwards;
+    animation: opacity 3s ease forwards;
   }
 
   .banner img {
@@ -105,17 +105,6 @@ body {
     object-fit: cover;
   }
   
-  @keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
   @media (max-width: 991px) {
     .navbar-nav{
       background-color: rgba(56, 64, 68, 0.9) ;
@@ -123,7 +112,7 @@ body {
     }
 
     .logo{
-      max-height: 80px;
+      max-height: 70px;
     }
 
     .banner img {
@@ -140,10 +129,87 @@ body {
 
   .acerca{
     padding-top: 160px;
+    padding-bottom: 120px;
   }
 
-  .contacto{
-    padding-top: 160px;
+  .contact-form-map{
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+ .nosotros, .img-nosotros, .titulo-nosotros{
+    animation: slideInUp 1s ease forwards;
+  }
+
+  .slideLeftAnimation{
+    animation: slideInLeft 1s ease forwards;
+  }
+  
+  .slideRightAnimation{
+    animation: slideInRight 1s ease forwards;
+  }
+
+  #conctato-info {
+    background-image: url('img/woodpeckerhouse-img-1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+  }
+  
+  .content-contact-info{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+  }
+  
+  .contact-map{
+    transform: translateX(200%);
+  }
+
+  .contact-form{
+    transform: translateX(-200%);
+  }
