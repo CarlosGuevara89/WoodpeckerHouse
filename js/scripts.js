@@ -54,11 +54,11 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", function() {
     var scrollPosition = window.scrollY;
     var seccionPosition = document.getElementById("contact-form-map").offsetTop;
-    var triggerPosition = seccionPosition - window.innerHeight / 1.5; 
+    var triggerPosition = seccionPosition - window.innerHeight / 1; 
 
     if (scrollPosition >= triggerPosition && !animationReproduced) {
-      contactForm.classList.add("slideLeftAnimation");
-      contactMap.classList.add("slideRightAnimation");
+      contactForm.classList.add("animate__animated", "animate__fadeInLeft");
+      contactMap.classList.add("animate__animated", "animate__fadeInRight");
       animationReproduced = true;
     }
   });
