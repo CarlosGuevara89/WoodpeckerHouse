@@ -26,8 +26,18 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
+  <!--spinner-->
+  <div id="loader" class="spinner-wrapper" style="display: none;">
+    <div class="spinner-border text-secondary" style="width: 5rem; height: 5rem;" role="status" >
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
@@ -98,11 +108,11 @@
             <h1>Woodpecker House, Rancho Quemado, Osa</h1>
           </div>
           <div class="row align-items-start">
-            <div class="col-md-8 animate__animated animate__fadeInUp">
+            <div class="col-md-8 animate__animated animate__fadeInUp animate__slower">
               <p>Situado en medio de exuberantes bosques tropicales y cerca de fascinantes atracciones naturales, como el Parque Nacional Corcovado y la Reserva Biológica Isla del Caño, Woodpecker House es el destino perfecto para los amantes de la naturaleza y los buscadores de aventuras.</p>
               <p>Nuestra ubicación en Rancho Quemado de Osa ofrece a nuestros huéspedes un refugio tranquilo y sereno lejos del bullicio de la vida cotidiana. Con cómodas instalaciones, una cálida hospitalidad y un entorno natural impresionante, Woodpecker House es el lugar ideal para relajarse, reconectarse con la naturaleza y explorar las maravillas que Costa Rica tiene para ofrecer.</p>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp"> 
+            <div class="col-md-4 animate__animated animate__fadeInUp animate__slower"> 
               <img src="img/woodpeckerhouse-img-6.png" class="img-thumbnail rounded img-fluid" alt="woodpeckerhouse 1" width="300" height="300">
             </div>
           </div>
@@ -130,9 +140,9 @@
           </div>
         </section>
         
-        <section id="contact-form-map" class="container contact-form-map">
+        <section id="contact-form-map" class="container contact-form-map">        
             <div class="row align-items-start">
-              <div id="contact-form" class="col-md-6">
+              <div id="contact-form" class="col-md-6 position-relative">
                 <h3>Envianos un mensaje</h3>
                 <form id="contactForm">
                     <div class="mb-3">
@@ -148,15 +158,13 @@
                       <textarea class="form-control" id="mensaje" name="mensaje" rows="6" required></textarea>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6Lcq7XgpAAAAABAxhbxphTZMsbpcw78QaL6AMvdc"></div> 
-                    <button type="submit"  class="btn btn-primary mt-2">Enviar</button>
+                    <button type="submit"  class="btn btn-primary mt-4">Enviar</button>
                 </form>
-            </div>
-            <div id="contact-map" class="col-md-6">
-              <div class="map-container mt-4">
-                  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1972.0544265895596!2d-83.56498525262752!3d8.681197741199027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scr!4v1708372865991!5m2!1ses-419!2scr"  style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div id="contact-map" class="col-md-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1756.9029629903716!2d-83.56479582601435!3d8.68073769273292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa4770033474761%3A0x61898f85bdd1f21a!2sWoodpecker%20House!5e0!3m2!1ses-419!2scr!4v1709755649618!5m2!1ses-419!2scr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
               </div>
             </div>
-            <div id="respuesta"></div>
           </section>
     </div> 
 

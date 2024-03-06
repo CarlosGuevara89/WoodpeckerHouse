@@ -22,19 +22,45 @@ $(document).ready(function(){
     $('#contactForm').submit(function(e){
       e.preventDefault();
       var formData = $(this).serialize();
+      $('#loader').show();
+      
       $.ajax({
         url: 'php/sendmail.php',
         type: 'post',
         data: formData,
         success: function(response){
-            alert(response); 
-            if(response.indexOf('¡El mensaje ha sido enviado con éxito') !== -1){
-              $('#contactForm')[0].reset();
-              location.reload();
+          $('#loader').hide();
+          if(response == 1){
+            Swal.fire({
+              icon: 'warning',
+              title: '¡Ooops!',
+              text: 'Por favor, verifica que no eres un robot.',
+              showConfirmButton: true,
+              timer: 3000 
+            });
+          }
+
+          if(response == 2){
+            Swal.fire({
+              icon: 'success',
+              title: '¡Mensaje enviado!',
+              text: 'El mensaje ha sido enviado con éxito.',
+              showConfirmButton: true,
+              timer: 3000 
+            });
+            $('#contactForm')[0].reset();
+            grecaptcha.reset();
           }
         },
         error: function(){
-            alert('Hubo un error en la solicitud.');
+          $('#loader').hide();
+          Swal.fire({
+            icon: 'error',
+            title: '¡Ooops!',
+            text: 'Ha ocurrido un error. Por favor, inténtalo de nuevo más tarde.',
+            showConfirmButton: true,
+            timer: 3000 
+          });
         }
       });
     });
@@ -57,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var triggerPosition = seccionPosition - window.innerHeight / 1; 
 
     if (scrollPosition >= triggerPosition && !animationReproduced) {
-      contactForm.classList.add("animate__animated", "animate__fadeInLeft");
-      contactMap.classList.add("animate__animated", "animate__fadeInRight");
+      contactForm.classList.add("animate__animated", "animate__fadeInLeft", "animate__slower");
+      contactMap.classList.add("animate__animated", "animate__fadeInRight", "animate__slower");
       animationReproduced = true;
     }
   });

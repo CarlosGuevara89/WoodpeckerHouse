@@ -14,7 +14,7 @@ $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?s
 $responseKeys = json_decode($response, true);
 
 if (!$responseKeys["success"]) {
-  echo "Por favor, verifica que no eres un robot.";
+  echo 1; //Por favor, verifica que no eres un robot.
 } else {
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
@@ -42,9 +42,9 @@ if (!$responseKeys["success"]) {
     $mail->Body = $body;
 
     if ($mail->send()) {
-      echo "¡El mensaje ha sido enviado con éxito!";
+      echo 2; //¡El mensaje ha sido enviado con éxito!
     } else {
-      echo "Hubo un error al enviar el correo: " . $mail->ErrorInfo;
+      echo $mail->ErrorInfo;
     }
 }
 ?>
