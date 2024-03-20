@@ -53,7 +53,7 @@
             <a class="nav-link" href="#inicio">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#acerca">Acerca de</a>
+            <a class="nav-link" href="#acerca">Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#conctato-info">Contacto</a>
@@ -84,11 +84,11 @@
                   <img src="img/woodpeckerhouse-img-7.jpeg" class="d-block w-100" alt="woodpeckerhouse 5">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev" style="z-index: 2;">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next" style="z-index: 2;">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -100,6 +100,7 @@
                 <li data-bs-target="#banner" data-bs-slide-to="4"></li>
               </ol>
             </div>
+            
       </div>
     </section>
     <div class="page-content">
@@ -123,7 +124,7 @@
         <section id="conctato-info" class="container-fluid" style="background-image: url('img/woodpeckerhouse-img-8.jpeg');">
           <div class="pb-5 container content-contact-info">
               <h1 class="pb-4">Contactenos</h1>
-              <div class="row align-items-start">
+              <div class="row align-items-start conctact-info-icons">
                 <div class="col-md-4">
                   <i class="fas fa-map-marker-alt location-icon"></i>
                   <span class="location-description">Rancho Quemado, Osa, Costa Rica</span>
@@ -158,7 +159,7 @@
                       <textarea class="form-control" id="mensaje" name="mensaje" rows="6" required></textarea>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6Lcq7XgpAAAAABAxhbxphTZMsbpcw78QaL6AMvdc"></div> 
-                    <button type="submit"  class="btn btn-primary mt-4">Enviar</button>
+                    <button type="submit" class="btn mt-4 btn-send-mail">Enviar</button>
                 </form>
               </div>
               <div id="contact-map" class="col-md-6">
@@ -174,26 +175,18 @@
           <div class="footer-menu">
             <ul>
               <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#acerca">Acerca de Nosotros</a></li>
+              <li><a href="#acerca">Nosotros</a></li>
               <li><a href="#servicios">Nuestros Servicios</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
           </div>
-          <div class="location">
-            <i class="fas fa-map-marker-alt location-icon"></i>
-            <span class="location-description">Rancho Quemado, Osa, Costa Rica</span>
+          <hr class="featurette-divider">
+          <div class="social-icons">
+            <span class="location-description">&copy; 2024 Woodpecker House | Woodpeckerhouse.com </span>
+            <a href="https://www.facebook.com/tu-pagina" target="_blank" class="btn btn-social"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/tu-pagina" target="_blank" class="btn btn-social"><i class="fab fa-instagram"></i></a>
           </div>
-          <!-- Redes Sociales -->
-          <div class="social-icons mt-3">
-            <a href="https://www.facebook.com/tu-pagina" target="_blank" class="btn btn-outline-primary btn-social"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/tu-pagina" target="_blank" class="btn btn-outline-primary btn-social"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/tu-pagina" target="_blank" class="btn btn-outline-primary btn-social"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/tu-pagina" target="_blank" class="btn btn-outline-primary btn-social"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <!-- Copyright -->
-          <div class="text-center mt-3">
-            <p class="text-muted">&copy; 2024 Woodpecker House. Todos los derechos reservados.</p>
-          </div>
+         
         </div>
     </footer>
 </body>
