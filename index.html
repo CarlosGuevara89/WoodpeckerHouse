@@ -29,6 +29,14 @@
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+  
+
 </head>
 <body>
   <!--spinner-->
@@ -39,28 +47,15 @@
   </div>
   
   <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-start ">
       <a class="navbar-brand" href="#">
-        <img src="img/MainLogo.png" alt="Logo" class="logo">
+          <img src="img/MainLogo.png" alt="Logo" class="logo">
       </a>
-      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#inicio">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#acerca">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#conctato-info">Contacto</a>
-          </li>
-        </ul>
+      <div class="hotel-name mx-3">
+        Woodpecker House
       </div>
-    </div>
+  </div>
   </nav>
 
   <!-- Banner -->
@@ -109,9 +104,9 @@
             <h1>Woodpecker House, Rancho Quemado, Osa</h1>
           </div>
           <div class="row align-items-start">
-            <div class="col-md-8 animate__animated animate__fadeInUp animate__slower">
-              <p>Situado en medio de exuberantes bosques tropicales y cerca de fascinantes atracciones naturales, como el Parque Nacional Corcovado y la Reserva Biológica Isla del Caño, Woodpecker House es el destino perfecto para los amantes de la naturaleza y los buscadores de aventuras.</p>
-              <p>Nuestra ubicación en Rancho Quemado de Osa ofrece a nuestros huéspedes un refugio tranquilo y sereno lejos del bullicio de la vida cotidiana. Con cómodas instalaciones, una cálida hospitalidad y un entorno natural impresionante, Woodpecker House es el lugar ideal para relajarse, reconectarse con la naturaleza y explorar las maravillas que Costa Rica tiene para ofrecer.</p>
+            <div class="col-md-8 animate__animated animate__fadeInUp animate__slower info">
+              <p>Located amid lush tropical forests and near fascinating natural attractions such as Corcovado National Park and Isla del Caño Biological Reserve, Woodpecker House is the perfect destination for nature lovers and adventure seekers.</p>
+              <p>Our location in Rancho Quemado de Osa offers guests a quiet and serene retreat away from the hustle and bustle of daily life. With comfortable amenities, warm hospitality, and stunning natural scenery, Woodpecker House is the ideal place to relax, reconnect with nature, and explore the wonders Costa Rica has to offer.</p>
             </div>
             <div class="col-md-4 animate__animated animate__fadeInUp animate__slower"> 
               <img src="img/woodpeckerhouse-img-6.png" class="img-thumbnail rounded img-fluid" alt="woodpeckerhouse 1" width="300" height="300">
@@ -123,13 +118,13 @@
 
         <section id="conctato-info" class="container-fluid" style="background-image: url('img/woodpeckerhouse-img-8.jpeg');">
           <div class="pb-5 container content-contact-info">
-              <h1 class="pb-4">Contactenos</h1>
+              <h1 class="pb-4">Contact Us</h1>
               <div class="row align-items-start conctact-info-icons">
                 <div class="col-md-4">
                   <i class="fas fa-map-marker-alt location-icon"></i>
                   <span class="location-description">Rancho Quemado, Osa, Costa Rica</span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <i class="fas fa-phone-alt location-icon"></i>
                   <span class="location-description">(+506) 8422-1308</span>
                 </div>
@@ -140,26 +135,96 @@
             </div>
           </div>
         </section>
+
+
+      <section class="gallery">
+          <div class="container container-img">
+              <div class="box-img">
+                  <figure>
+                    <img src="img/woodpeckerhouse-img-4.jpeg" alt="woodpecker-img-gallery">
+                  </figure>
+              </div>
+              <div class="box-img">
+                  <figure>
+                    <img src="img/woodpeckerhouse-img-3.jpeg" alt="woodpecker-img-gallery">
+                  </figure>
+              </div>
+              <div class="box-img">
+                  <figure>
+                    <img src="img/woodpeckerhouse-img-5.jpeg" alt="woodpecker-img-gallery">
+              </div>
+              <div class="box-img">
+                  <figure>
+                    <img src="img/woodpeckerhouse-img-10.jpeg" alt="woodpecker-img-gallery">
+                  </figure>
+              </div>
+              <div class="box-img">
+                  <figure>
+                    <img src="img/woodpeckerhouse-img-7.jpeg" alt="woodpecker-img-gallery">
+                  </figure>
+              </div>
+              <div class="box-img">
+                  <figure>
+                    <img src="img/woodpeckerhouse-img-3.jpeg" alt="woodpecker-img-gallery">
+                  </figure>
+              </div>
+              <div class="box-img">
+                  <figure>
+                    <img src="img/woodpeckerhouse-img-10.jpeg" alt="woodpecker-img-gallery">
+                  </figure>
+              </div>
+              <div class="box-img">
+                <figure>
+                  <img src="img/woodpeckerhouse-img-4.jpeg" alt="woodpecker-img-gallery">
+                </figure>
+            </div>
+            <div class="box-img">
+                <figure>
+                  <img src="img/woodpeckerhouse-img-3.jpeg" alt="woodpecker-img-gallery">
+                </figure>
+            </div>
+            <div class="box-img">
+                <figure>
+                  <img src="img/woodpeckerhouse-img-5.jpeg" alt="woodpecker-img-gallery">
+            </div>
+            <div class="box-img">
+                <figure>
+                  <img src="img/woodpeckerhouse-img-10.jpeg" alt="woodpecker-img-gallery">
+                </figure>
+            </div>
+            <div class="box-img">
+                <figure>
+                  <img src="img/woodpeckerhouse-img-7.jpeg" alt="woodpecker-img-gallery">
+                </figure>
+            </div>
+            <div class="box-img">
+                <figure>
+                  <img src="img/woodpeckerhouse-img-3.jpeg" alt="woodpecker-img-gallery">
+                </figure>
+            </div>
+          </div>
+      </section>
+      
         
         <section id="contact-form-map" class="container contact-form-map">        
             <div class="row align-items-start">
               <div id="contact-form" class="col-md-6 position-relative">
-                <h3>Envianos un mensaje</h3>
+                <h3>Leave us a message</h3>
                 <form id="contactForm">
                     <div class="mb-3">
-                      <label for="nombre" class="form-label">Nombre</label>
+                      <label for="nombre" class="form-label">Name</label>
                       <input type="text" class="form-control" id="nombre" name="nombre" required>
                     </div>
                     <div class="mb-3">
-                      <label for="email" class="form-label">Correo Electrónico</label>
+                      <label for="email" class="form-label">Email</label>
                       <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="mb-3">
-                      <label for="mensaje" class="form-label">Mensaje</label>
+                      <label for="mensaje" class="form-label">Message</label>
                       <textarea class="form-control" id="mensaje" name="mensaje" rows="6" required></textarea>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6Lcq7XgpAAAAABAxhbxphTZMsbpcw78QaL6AMvdc"></div> 
-                    <button type="submit" class="btn mt-4 btn-send-mail">Enviar</button>
+                    <button type="submit" class="btn mt-4 btn-send-mail">Send</button>
                 </form>
               </div>
               <div id="contact-map" class="col-md-6">
@@ -172,16 +237,6 @@
     
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
-          <!-- Menú -->
-          <div class="footer-menu">
-            <ul>
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#acerca">Nosotros</a></li>
-              <li><a href="#servicios">Nuestros Servicios</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
-          </div>
-          <hr class="featurette-divider">
           <div class="social-icons">
             <span class="location-description">&copy; 2024 Woodpecker House | Woodpeckerhouse.com </span>
             <a href="https://www.facebook.com/tu-pagina" target="_blank" class="btn btn-social"><i class="fab fa-facebook-f"></i></a>

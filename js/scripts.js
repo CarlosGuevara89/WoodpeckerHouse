@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
   banner.style.display = "block";
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
   var contactForm = document.getElementById("contact-form");
   var contactMap = document.getElementById("contact-map");
   var animationReproduced = false;
@@ -87,5 +87,5 @@ document.addEventListener("DOMContentLoaded", function() {
       contactMap.classList.add("animate__animated", "animate__fadeInRight", "animate__slower");
       animationReproduced = true;
     }
-  });
-});
+  });*
+});*/
