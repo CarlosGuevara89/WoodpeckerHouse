@@ -44,19 +44,26 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about" data-i18n="navAbout">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#amenities">Amenities</a>
+            <a class="nav-link" href="#amenities" data-i18n="navAmenities">Amenities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#gallery" data-i18n="navGallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
           </li>
           <li class="nav-item ms-lg-3">
-            <a class="btn btn-book-now" href="#contact">Book Now</a>
+            <a class="btn btn-book-now" href="#contact" data-i18n="navBookNow">Book Now</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <button id="langToggle" class="btn-lang-toggle" type="button">
+              <span class="lang-option active" data-lang="en">EN</span>
+              <span class="lang-separator">|</span>
+              <span class="lang-option" data-lang="es">ES</span>
+            </button>
           </li>
         </ul>
       </div>
@@ -105,18 +112,18 @@
       <div class="hero-content">
         <img src="img/woodpeckerHouseLogo.png" alt="Woodpecker House" class="hero-logo">
         <h1 class="hero-title">Woodpecker House</h1>
-        <p class="hero-subtitle">Your Eco-Lodge Retreat in the Heart of Osa</p>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">Your Eco-Lodge Retreat in the Heart of Osa</p>
         <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Rancho Quemado, Osa, Costa Rica</p>
         <div class="hero-buttons">
-          <a href="#contact" class="btn-hero-primary">Book Your Stay</a>
-          <a href="#about" class="btn-hero-secondary">Discover More</a>
+          <a href="#contact" class="btn-hero-primary" data-i18n="heroCtaPrimary">Book Your Stay</a>
+          <a href="#about" class="btn-hero-secondary" data-i18n="heroCtaSecondary">Discover More</a>
         </div>
       </div>
     </div>
 
     <!-- Scroll Indicator -->
     <div class="scroll-indicator">
-      <span>Scroll</span>
+      <span data-i18n="heroScroll">Scroll</span>
       <i class="fas fa-chevron-down"></i>
     </div>
   </section>
@@ -125,8 +132,8 @@
   <section id="about" class="section-padding bg-cream">
     <div class="container">
       <div class="section-header reveal">
-        <p class="section-tag">Welcome</p>
-        <h2 class="section-title">A Nature Lover's Paradise</h2>
+        <p class="section-tag" data-i18n="aboutTag">Welcome</p>
+        <h2 class="section-title" data-i18n="aboutTitle">A Nature Lover's Paradise</h2>
         <div class="title-divider">
           <span></span>
           <i class="fas fa-leaf"></i>
@@ -141,13 +148,13 @@
         </div>
         <div class="col-lg-6 reveal-right">
           <div class="about-text">
-            <h3>Experience the Magic of Osa Peninsula</h3>
-            <p>Located amid lush tropical forests and near fascinating natural attractions such as Corcovado National Park and Isla del Caño Biological Reserve, Woodpecker House is the perfect destination for nature lovers and adventure seekers.</p>
-            <p>Our location in Rancho Quemado de Osa offers guests a quiet and serene retreat away from the hustle and bustle of daily life. With comfortable amenities, warm hospitality, and stunning natural scenery, Woodpecker House is the ideal place to relax, reconnect with nature, and explore the wonders Costa Rica has to offer.</p>
+            <h3 data-i18n="aboutH3">Experience the Magic of Osa Peninsula</h3>
+            <p data-i18n="aboutP1">Located amid lush tropical forests and near fascinating natural attractions such as Corcovado National Park and Isla del Caño Biological Reserve, Woodpecker House is the perfect destination for nature lovers and adventure seekers.</p>
+            <p data-i18n="aboutP2">Our location in Rancho Quemado de Osa offers guests a quiet and serene retreat away from the hustle and bustle of daily life. With comfortable amenities, warm hospitality, and stunning natural scenery, Woodpecker House is the ideal place to relax, reconnect with nature, and explore the wonders Costa Rica has to offer.</p>
             <div class="about-highlights">
-              <span class="highlight-pill"><i class="fas fa-tree"></i> Tropical Forest</span>
-              <span class="highlight-pill"><i class="fas fa-water"></i> River Access</span>
-              <span class="highlight-pill"><i class="fas fa-mountain"></i> Mountain Views</span>
+              <span class="highlight-pill"><i class="fas fa-tree"></i> <span data-i18n="aboutPill1">Tropical Forest</span></span>
+              <span class="highlight-pill"><i class="fas fa-water"></i> <span data-i18n="aboutPill2">River Access</span></span>
+              <span class="highlight-pill"><i class="fas fa-mountain"></i> <span data-i18n="aboutPill3">Mountain Views</span></span>
             </div>
           </div>
         </div>
@@ -159,8 +166,8 @@
   <section id="amenities" class="section-padding bg-white">
     <div class="container">
       <div class="section-header reveal">
-        <p class="section-tag">What We Offer</p>
-        <h2 class="section-title">Our Amenities</h2>
+        <p class="section-tag" data-i18n="amenitiesTag">What We Offer</p>
+        <h2 class="section-title" data-i18n="amenitiesTitle">Our Amenities</h2>
         <div class="title-divider">
           <span></span>
           <i class="fas fa-leaf"></i>
@@ -172,43 +179,43 @@
           <div class="amenity-icon">
             <i class="fas fa-bed"></i>
           </div>
-          <h4>Comfortable Rooms</h4>
-          <p>Cozy rooms with all the essentials for a restful stay surrounded by nature.</p>
+          <h4 data-i18n="amenity1Title">Comfortable Rooms</h4>
+          <p data-i18n="amenity1Desc">Cozy rooms with all the essentials for a restful stay surrounded by nature.</p>
         </div>
         <div class="amenity-card">
           <div class="amenity-icon">
             <i class="fas fa-utensils"></i>
           </div>
-          <h4>Equipped Kitchen</h4>
-          <p>A fully equipped kitchen so you can prepare your favorite meals anytime.</p>
+          <h4 data-i18n="amenity2Title">Equipped Kitchen</h4>
+          <p data-i18n="amenity2Desc">A fully equipped kitchen so you can prepare your favorite meals anytime.</p>
         </div>
         <div class="amenity-card">
           <div class="amenity-icon">
             <i class="fas fa-hiking"></i>
           </div>
-          <h4>Guided Tours</h4>
-          <p>Explore Corcovado National Park and local trails with experienced guides.</p>
+          <h4 data-i18n="amenity3Title">Guided Tours</h4>
+          <p data-i18n="amenity3Desc">Explore Corcovado National Park and local trails with experienced guides.</p>
         </div>
         <div class="amenity-card">
           <div class="amenity-icon">
             <i class="fas fa-wifi"></i>
           </div>
-          <h4>Free Wi-Fi</h4>
-          <p>Stay connected with complimentary wireless internet throughout the lodge.</p>
+          <h4 data-i18n="amenity4Title">Free Wi-Fi</h4>
+          <p data-i18n="amenity4Desc">Stay connected with complimentary wireless internet throughout the lodge.</p>
         </div>
         <div class="amenity-card">
           <div class="amenity-icon">
             <i class="fas fa-shuttle-van"></i>
           </div>
-          <h4>Transportation</h4>
-          <p>We offer transportation services to and from nearby attractions and towns.</p>
+          <h4 data-i18n="amenity5Title">Transportation</h4>
+          <p data-i18n="amenity5Desc">We offer transportation services to and from nearby attractions and towns.</p>
         </div>
         <div class="amenity-card">
           <div class="amenity-icon">
             <i class="fas fa-paw"></i>
           </div>
-          <h4>Wildlife Watching</h4>
-          <p>Spot toucans, monkeys, and exotic wildlife right from the lodge grounds.</p>
+          <h4 data-i18n="amenity6Title">Wildlife Watching</h4>
+          <p data-i18n="amenity6Desc">Spot toucans, monkeys, and exotic wildlife right from the lodge grounds.</p>
         </div>
       </div>
     </div>
@@ -218,8 +225,8 @@
   <section id="contact-info" class="contact-info-section" style="background-image: url('img/woodpeckerhouse-img-1.jpeg');">
     <div class="container">
       <div class="section-header reveal">
-        <p class="section-tag" style="color: rgba(255,255,255,0.7);">Get In Touch</p>
-        <h2 class="section-title" style="color: #ffffff;">Contact Information</h2>
+        <p class="section-tag" style="color: rgba(255,255,255,0.7);" data-i18n="contactInfoTag">Get In Touch</p>
+        <h2 class="section-title" style="color: #ffffff;" data-i18n="contactInfoTitle">Contact Information</h2>
         <div class="title-divider">
           <span></span>
           <i class="fas fa-leaf"></i>
@@ -232,7 +239,7 @@
             <div class="glass-card-icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
-            <h4>Our Location</h4>
+            <h4 data-i18n="contactLocation">Our Location</h4>
             <p>Rancho Quemado, Osa,<br>Costa Rica</p>
           </div>
         </div>
@@ -241,7 +248,7 @@
             <div class="glass-card-icon">
               <i class="fas fa-phone-alt"></i>
             </div>
-            <h4>Phone</h4>
+            <h4 data-i18n="contactPhone">Phone</h4>
             <p><a href="tel:+50684221308">+506 8422-1308</a></p>
           </div>
         </div>
@@ -250,7 +257,7 @@
             <div class="glass-card-icon">
               <i class="fas fa-envelope"></i>
             </div>
-            <h4>Email</h4>
+            <h4 data-i18n="contactEmail">Email</h4>
             <p><a href="mailto:woodpeckerhouse2@gmail.com">woodpeckerhouse2@gmail.com</a></p>
           </div>
         </div>
@@ -262,8 +269,8 @@
   <section id="gallery" class="section-padding bg-cream">
     <div class="container">
       <div class="section-header reveal">
-        <p class="section-tag">Our Space</p>
-        <h2 class="section-title">Photo Gallery</h2>
+        <p class="section-tag" data-i18n="galleryTag">Our Space</p>
+        <h2 class="section-title" data-i18n="galleryTitle">Photo Gallery</h2>
         <div class="title-divider">
           <span></span>
           <i class="fas fa-leaf"></i>
@@ -333,31 +340,31 @@
   <section id="contact" class="section-padding bg-white">
     <div class="container">
       <div class="section-header reveal">
-        <p class="section-tag">Reach Out</p>
-        <h2 class="section-title">Send Us a Message</h2>
+        <p class="section-tag" data-i18n="contactFormTag">Reach Out</p>
+        <h2 class="section-title" data-i18n="contactFormTitle">Send Us a Message</h2>
         <div class="title-divider">
           <span></span>
           <i class="fas fa-leaf"></i>
           <span></span>
         </div>
-        <p class="section-subtitle">Have questions about your stay? We'd love to hear from you.</p>
+        <p class="section-subtitle" data-i18n="contactFormSubtitle">Have questions about your stay? We'd love to hear from you.</p>
       </div>
       <div class="row g-4 reveal">
         <div class="col-lg-6">
           <div class="contact-form-wrapper">
-            <h3>Leave Us a Message</h3>
+            <h3 data-i18n="contactFormH3">Leave Us a Message</h3>
             <form id="contactForm">
               <div class="mb-3">
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Your Name" required>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Your Name" data-i18n-placeholder="placeholderName" required>
               </div>
               <div class="mb-3">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" data-i18n-placeholder="placeholderEmail" required>
               </div>
               <div class="mb-3">
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Your Message" required></textarea>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Your Message" data-i18n-placeholder="placeholderMessage" required></textarea>
               </div>
               <div class="g-recaptcha" data-sitekey="6Lcq7XgpAAAAABAxhbxphTZMsbpcw78QaL6AMvdc"></div>
-              <button type="submit" class="btn btn-primary-custom mt-3"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+              <button type="submit" class="btn btn-primary-custom mt-3" data-i18n-html="btnSendMessage"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
             </form>
           </div>
         </div>
@@ -389,20 +396,20 @@
         <div class="col-lg-4 mb-4">
           <div class="footer-brand">
             <img src="img/MainLogo.png" alt="Woodpecker House" class="logo">
-            <p>A cozy eco-lodge nestled in the heart of Osa Peninsula, offering an authentic Costa Rican nature experience near Corcovado National Park.</p>
+            <p data-i18n="footerDesc">A cozy eco-lodge nestled in the heart of Osa Peninsula, offering an authentic Costa Rican nature experience near Corcovado National Park.</p>
           </div>
         </div>
         <div class="col-lg-4 mb-4">
-          <h5>Quick Links</h5>
+          <h5 data-i18n="footerQuickLinks">Quick Links</h5>
           <ul class="footer-links">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#amenities">Amenities</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-i18n="footerAbout">About Us</a></li>
+            <li><a href="#amenities" data-i18n="footerAmenities">Amenities</a></li>
+            <li><a href="#gallery" data-i18n="footerGallery">Gallery</a></li>
+            <li><a href="#contact" data-i18n="footerContact">Contact</a></li>
           </ul>
         </div>
         <div class="col-lg-4 mb-4">
-          <h5>Connect</h5>
+          <h5 data-i18n="footerConnect">Connect</h5>
           <div class="footer-contact-item">
             <i class="fas fa-map-marker-alt"></i>
             <span>Rancho Quemado, Osa, Costa Rica</span>
@@ -423,7 +430,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Woodpecker House. All rights reserved.</p>
+        <p data-i18n="footerCopyright">&copy; 2026 Woodpecker House. All rights reserved.</p>
       </div>
     </div>
   </footer>
